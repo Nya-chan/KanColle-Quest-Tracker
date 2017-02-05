@@ -153,7 +153,7 @@ function addHistory(src, unlocks) {
 		if ($(this).data("timeout")) {
 			var questTimeout = moment($(this).data("timeout"), "YYYY-MM-DD").tz("Asia/Tokyo").hours(5).minutes(0).seconds(0);
 		} else {
-			var questTimeout = moment().add(1, 'd').tz("Asia/Tokyo");
+			var questTimeout = moment().subtract(1, 'd').tz("Asia/Tokyo");
 		}
 		var justNow = moment.tz("Asia/Tokyo");
         if ($("#" + value).length && !questTimeout.isAfter(justNow)) {
