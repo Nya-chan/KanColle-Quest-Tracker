@@ -1,7 +1,7 @@
 $(document).ready(function() {
    
-    $.getJSON("quests.json", function(data) {
-		$.each(testData, function(key, val) {
+    $.getJSON("questtracker/js/quests.json", function(data) {
+		$.each(data, function(key, val) {
 			if (val["requirements"]) {
 				var reqs = "data-req='" + JSON.stringify(val["requirements"]) + "'";
 			} else {var reqs = '';}
@@ -26,7 +26,7 @@ $(document).ready(function() {
 			");
 			$(".other-rew span").each(function() {
 				var bgPic = $(this).attr("class");
-				$(this).css("background-image", "url('img/" + bgPic + ".png')");
+				$(this).css("background-image", "url('questtracker/img/" + bgPic + ".png')");
 			});
 		});
 	});

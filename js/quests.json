@@ -2400,7 +2400,7 @@
     "nameen": "Sortie a Battleship Division!",
     "req": "Sortie a (F)BB(V) as flagship, 1 other (F)BB(V) and up to 4 additional ships to World 3-3 and obtain an S-Rank at the boss node. Due to the branching rules you're required to bring at least 2 CV(L).",
     "resrew": "0 / 800 / 0 / 200",
-    "otherrew": "2x<span class='screw'>Screw</span> <span class='type-2-seaplane'>Type 2 Seaplane Fighter Kai</span> <b>or<b> <span class='Catalina'>PBY-5A Catalina</span>"
+    "otherrew": "2x<span class='screw'>Screw</span> <span class='type-2-seaplane'>Type 2 Seaplane Fighter Kai</span> <b>or<b> <span class='catalina'>PBY-5A Catalina</span>"
   },
   "163": {
     "id": "B89",
