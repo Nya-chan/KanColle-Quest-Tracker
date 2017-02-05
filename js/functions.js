@@ -150,7 +150,11 @@ function removeHistory(src, req) {
 
 function addHistory(src, unlocks) {
 	$.each(unlocks, function(index, value) {
-        if ($("#" + value).length) {
+		if ($(this).data("timeout")) {
+			var questTimeout = moment($(this).data("timeout"), "YYYY-MM-DD").tz("Asia/Tokyo").hours(5).minutes(0).seconds(0);
+		}
+		var justNow = moment.tz("Asia/Tokyo");
+        if ($("#" + value).length && !questTimeout.isAfter(justNow)) {
             $("#" + value).removeClass("hidden");
             if ($("#" + value).data("unlocks") && !$("#" + value).is(".daily, .weekly, .monthly, .quarterly")) {
                 var unlocks = $("#" + value).data("unlocks");
