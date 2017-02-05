@@ -1,0 +1,80 @@
+html, body {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 90%; color: #222; margin: 0; padding: 0;}
+
+h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 2px #8866BB;}
+
+.quests {text-align: center;}
+
+.quest {width: 250px; height: 148px; border: 2px solid #CCC; background-color: #EEE; border-radius: 10px; text-align: center; position: relative; margin: 10px; z-index: 19; transition: all 0.2s linear; cursor: pointer; display: inline-block; opacity: 0.9;}
+.quest.inactive {opacity: 0.5;}
+.quest.focused {border-color: #C00 !important; transition: all 0.2s linear;}
+.quest.hidden {display: none;}
+.quest.hidden.temp-show {display: inline-block; opacity: 0.5;}
+
+.quest span {display: block;}
+.quest .id {float: left; width: 25px; height: 32px; line-height: 32px; background-color: #CCC; border-radius: 7px 0 0 0;}
+.quest .name {float: right; width: 225px; height: 16px; max-height: 16px; line-height: 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; background-color: #CCC;}
+.quest .name.jp {font-size: 0.65rem; font-weight: bold; border-radius: 0 7px 0 0;}
+
+.quest .req {clear: both; display: inline-block; width: 240px; height: 96px; line-height: 96px; overflow: hidden; vertical-align: middle; padding: 0 5px;}
+.quest .req span {display: inline-block; vertical-align: middle; line-height: 16px;}
+
+.quest .rewards {position: absolute; width: 100%; bottom: 0px; line-height: 22px; height: 20px; border-radius: 0 0 7px 7px; background-color: #CCC; font-size: 0.8rem;}
+.quest .res-rew {float: left; margin-left: 5px;}
+.quest .other-rew {float: right; margin-right: 8px;}
+
+.quest .other-rew span {font-size: 0px; color: transparent; background-position: 50% 50%; background-repeat: no-repeat; background-size: contain; min-width: 22px; display: inline-block; vertical-align: top;}
+.quest .other-rew span:hover {font-size: 1rem; color: #333; padding: 0 10px 0 50px; height: 44px; line-height: 44px; position: absolute; top: 0px; right: 8px; background-color: #D7F3C7; background-position: 0% 0%; border: 2px solid #43C769; transform: translate(0px, -30%); white-space: nowrap; border-radius: 5px;}
+
+.quest.composition {background-color: #D7F3C7; border-color: #43C769;}
+.quest.composition .name, .quest.composition .id, .quest.composition .rewards {background-color: #43C769;}
+
+.quest.sortie {background-color: #F3DCDC; border-color: #EC6063;}
+.quest.sortie .name, .quest.sortie .id, .quest.sortie .rewards {background-color: #EC6063;}
+
+.quest.exercise {background-color: #E5F3DB; border-color: #93CE67;}
+.quest.exercise .name, .quest.exercise .id, .quest.exercise .rewards {background-color: #93CE67;}
+
+.quest.expedition {background-color: #DFF0F9; border-color: #4EBBD4;}
+.quest.expedition .name, .quest.expedition .id, .quest.expedition .rewards {background-color: #4EBBD4;}
+
+.quest.supply {background-color: #F0E4B5; border-color: #DEC772;}
+.quest.supply .name, .quest.supply .id, .quest.supply .rewards {background-color: #DEC772;}
+
+.quest.arsenal {background-color: #D9B38C; border-color: #BA8F79;}
+.quest.arsenal .name, .quest.arsenal .id, .quest.arsenal .rewards {background-color: #BA8F79;}
+
+.quest.modernization {background-color: #EFE8F7; border-color: #CAA6DD;}
+.quest.modernization .name, .quest.modernization .id, .quest.modernization .rewards {background-color: #CAA6DD;}
+
+.quest.marriage {background-color: #F6ECFF; border-color: #FDD0F0;}
+.quest.marriage .name, .quest.marriage .id, .quest.marriage .rewards {background-color: #FDD0F0;}
+
+.quest.hidden {background-color: #EEE; border-color: #CCC;}
+.quest.hidden .name, .quest.hidden .id, .quest.hidden .rewards {background-color: #CCC;}
+
+.quest .switcher {position: absolute; top: -1px; right: 2px; display: none;}
+.quest .switcher:before {content: "✖"; color: #C00; font-size: 1.1rem;}
+.quest:hover .switcher {display: block;}
+.quest.hidden:hover .switcher:before {content: "✔"; color: #060;}
+
+.quests-switcher, .clear-selection, .info, .save {position: fixed; top: 55px; right: 0px; padding: 10px 10px 10px 15px; background-color: #AAAAFF; border-radius: 10px 0px 0px 10px; color: #FFF; border: 0px solid #8866BB; border-width: 1px 0px 1px 1px; cursor: pointer; transition: all 0.2s linear; z-index: 29;}
+.quests-switcher:hover, .clear-selection:hover, .info:hover, .save:hover {padding-right: 20px; transition: all 0.2s linear;}
+
+.quests-switcher:before {content: "Show deleted";}
+.quests-switcher.temp-show:before {content: "Hide deleted";}
+
+.clear-selection {top: 10px;}
+.clear-selection:before {content: "Clear selection";}
+
+.info {top: 145px;}
+.info:before {content: "?";}
+
+.save {top: 100px;}
+.save:before {content: "Save";}
+
+.help {position: fixed; top: 25%; left: 25%; width: 50%; text-align: center; z-index: 29; background: #FFF; padding: 20px; box-sizing: border-box; border: 2px solid; border-color: lightsteelblue; box-shadow: 0px 0px 10px 0px lightsteelblue; border-radius: 10px; display: none;}
+.help input[type="text"] {display: block; width: 50%; margin: 0 auto 10px; border: 1px solid lightsteelblue; height: 25px; border-radius: 5px;}
+.help input[type="text"]:active, .help input[type="text"]:focus {box-shadow: 0px 0px 5px 0px lightsteelblue;}
+.help #load-quests, .help #copy-code {display: inline-block; margin: 10px; background-color: #AAAAFF; border-radius: 5px; color: #FFF; border: 1px solid #8866BB; padding: 5px 10px; cursor: pointer;}
+.help .close-help {position: absolute; top: -1px; right: 4px; display: block; cursor: pointer;}
+.help .close-help:before {content: "✖"; color: #C00; font-size: 1.5rem;}

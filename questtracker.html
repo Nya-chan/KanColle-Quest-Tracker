@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="KanColle Quest Tracker">
+
+    <title>KanColle Quest Tracker</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jsPlumb-2.2.8-min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/moment.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/js.cookie.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/functions.js"></script>
+</head>
+<body>
+	<h1>KanColle Quest Tracker</h1>
+    <div class="quests"></div>
+    <div class="info"></div>
+    <div class="save"></div>
+	<div class="quests-switcher"></div>
+	<div class="clear-selection"></div>
+	<div class="help">
+		<h2>FAQ</h2>
+		<h3>Q: How to work with the tool?</h3>
+		<p><b>A:</b> Click on the quest and it will show you the quest chain up to it. Click it again to clear selection, or use the tab in the corner.</p>
+		<h3>Q: How to mark completed quests?</h3>
+		<p><b>A:</b> Click the red cross in the corner to hide it as completed. Click the "Show deleted" tab in the corner to show these hidden quests to re-add them and click it again to hide them anew. Daily, weekly, monthly and quarterly quests get re-added automatically at 5AM JST.</p>
+		<h3>Q: How about saving the data?</h3>
+		<p><b>A:</b> The data get saved into your browser when you click save or automatically when you leave the tab. You can also use the box below to save or load the quests manually.</p>
+		<input type="text" id="questHash" />
+		<span id="load-quests">Load code</span> <span id="copy-code">Copy code to clipboard</span>
+		<span class="close-help"></span>
+	</div>
+</body>
+</html>
