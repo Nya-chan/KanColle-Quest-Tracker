@@ -52,25 +52,29 @@ h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 
 .quest.hidden {background-color: #EEE; border-color: #CCC;}
 .quest.hidden .name, .quest.hidden .id, .quest.hidden .rewards {background-color: #CCC;}
 
-.quest .switcher {position: absolute; top: -1px; right: 2px; display: none;}
-.quest .switcher:before {content: "✖"; color: #C00; font-size: 1.1rem;}
+.quest .switcher {position: absolute; top: -5px; right: 0px; display: none;}
+.quest .switcher:before {content: "✖"; color: #C00; font-size: 1.5rem;}
 .quest:hover .switcher {display: block;}
 .quest.hidden:hover .switcher:before {content: "✔"; color: #060;}
 
-.quests-switcher, .clear-selection, .info, .save {position: fixed; top: 55px; right: 0px; padding: 10px 10px 10px 15px; background-color: #AAAAFF; border-radius: 10px 0px 0px 10px; color: #FFF; border: 0px solid #8866BB; border-width: 1px 0px 1px 1px; cursor: pointer; transition: all 0.2s linear; z-index: 29;}
-.quests-switcher:hover, .clear-selection:hover, .info:hover, .save:hover {padding-right: 20px; transition: all 0.2s linear;}
+.quests-switcher, .todo-switcher, .clear-selection, .info, .save {position: fixed; top: 55px; right: 0px; padding: 10px 10px 10px 15px; background-color: #AAAAFF; border-radius: 10px 0px 0px 10px; color: #FFF; border: 0px solid #8866BB; border-width: 1px 0px 1px 1px; cursor: pointer; transition: all 0.2s linear; z-index: 29;}
+.quests-switcher:hover, .todo-switcher:hover, .clear-selection:hover, .info:hover, .save:hover {padding-right: 20px; transition: all 0.2s linear;}
 
 .quests-switcher:before {content: "Show deleted";}
 .quests-switcher.temp-show:before {content: "Hide deleted";}
 
+.todo-switcher {top: 100px;}
+.todo-switcher:before {content: "ToDo OFF";}
+.todo-switcher.todo-on:before {content: "ToDo ON";}
+
 .clear-selection {top: 10px;}
 .clear-selection:before {content: "Clear selection";}
 
-.info {top: 145px;}
-.info:before {content: "?";}
-
-.save {top: 100px;}
+.save {top: 145px;}
 .save:before {content: "Save";}
+
+.info {top: 190px;}
+.info:before {content: "?";}
 
 .help {position: fixed; top: 25%; left: 25%; width: 50%; text-align: center; z-index: 29; background: #FFF; padding: 20px; box-sizing: border-box; border: 2px solid; border-color: lightsteelblue; box-shadow: 0px 0px 10px 0px lightsteelblue; border-radius: 10px; display: none;}
 .help input[type="text"] {display: block; width: 50%; margin: 0 auto 10px; border: 1px solid lightsteelblue; height: 25px; border-radius: 5px;}

@@ -1,12 +1,6 @@
 $(document).ready(function() {
     
-	if (typeof(Storage) !== "undefined") {
-		loadQuests(localStorage.getItem("questState"));
-    } else {
-		loadQuests(Cookies.get("questState"));
-    }
     jsPlumb.setContainer($(".quests"));
-    resetQuests();
     
     $("body").on("click", ".quest .switcher", function(e) {
 		if ($(this).parent(".quest").hasClass("hidden")) {
@@ -20,7 +14,9 @@ $(document).ready(function() {
 			var req = $(this).parent(".quest").data("req");
 			clearConnections();
 			removeHistory($(this).parent(".quest"), req);
-			$(".quests-switcher").hasClass("temp-show") ? $(this).parent(".quest").addClass("hidden temp-show") : $(this).parent(".quest").addClass("hidden");
+            if (!$(this).parent(".quests").hasClass("todo-on")) {
+                $(".quests-switcher").hasClass("temp-show") ? $(this).parent(".quest").addClass("hidden temp-show") : $(this).parent(".quest").addClass("hidden");
+            }
 		}
     });
     
@@ -50,6 +46,17 @@ $(document).ready(function() {
 		} else {
 			$(".quest.hidden").addClass("temp-show");
 			$(this).addClass("temp-show");
+		}
+	});
+    
+    $(".todo-switcher").on("click", function() {
+        clearConnections();
+		if ($(this).hasClass("todo-on")) {
+			$(".quests").removeClass("todo-on");
+			$(this).removeClass("todo-on");
+		} else {
+			$(".quests").addClass("todo-on");
+			$(this).addClass("todo-on");
 		}
 	});
 	
@@ -84,6 +91,16 @@ $(document).ready(function() {
 		loadQuests($("#questHash").val());
     });
     
+});
+
+$(document).ajaxStop(function() {
+    if (typeof(Storage) !== "undefined") {
+		var loadingStorage = localStorage.getItem("questState");
+    } else {
+		var loadingStorage = loadQuests(Cookies.get("questState"));
+    }
+	loadQuests(loadingStorage);
+    resetQuests();
 });
 
 function clearConnections() {
