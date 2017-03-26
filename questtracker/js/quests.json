@@ -4257,7 +4257,8 @@
     "req": "Sortie a Fleet consisting of 4 SS(V) with an SS(V) as flagship and 2 additional ships. Sortie to World 6-1 and score a victory at the boss node.",
     "resrew": "300 / 300 / 300 / 0",
     "otherrew": "3x<span class='screw'>Screw</span> <span class='irako'>Irako</span>"
-  },"164": {
+  },
+  "293": {
     "id": "B92",
     "classes": "quest sortie",
     "requirements": [
@@ -4270,7 +4271,7 @@
     "resrew": "0 / 0 / 700 / 0",
     "otherrew": "<span class='kanhon-bulge'>New Kanhon Design Anti-torpedo Bulge (Medium)</span>"
   },
-  "279": {
+  "294": {
     "id": "F49",
     "classes": "quest arsenal",
     "requirements": [
@@ -4284,7 +4285,7 @@
     "resrew": "0 / 0 / 0 / 0",
     "otherrew": "<span class='seiran-631'>Seiran (631 Air Group)</span>"
   },
-  "280": {
+  "295": {
     "id": "F50",
     "classes": "quest arsenal",
     "requirements": [
