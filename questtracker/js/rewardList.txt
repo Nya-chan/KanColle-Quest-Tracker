@@ -58,6 +58,7 @@
 <span class='type-1-lba-22a'>Type 1 Land-based Attack Aircraft 22A</span>
 <span class='prot-keiun'>Prototype Keiun</span>
 <span class='kikka-kai'>Kikka Kai</span>
+<span class='seiran-631'>Seiran (631 Air Group)</span>
 
 <span class='type22-radar'>Type 22 Surface Radar Kai 4</span>
 <span class='type13-radar'>Type 13 Air Radar Kai</span>
@@ -68,6 +69,7 @@
 <span class='kanhon-turbine'>Improved Kanhon Type Turbine</span>
 <span class='kanhon-boiler'>Enhanced Kanhon Type Boiler</span>
 <span class='large-bulge'>Anti-torpedo Bulge (Large)</span>
+<span class='kanhon-bulge'>New Kanhon Design Anti-torpedo Bulge (Medium)</span>
 <span class='daihatsu'>Daihatsu Landing Craft</span>
 <span class='toku-daihatsu'>Toku Daihatsu Landing Craft</span>
 <span class='type-2-landing-craft'>Special Type 2 Amphibious Landing Craft</span>
@@ -81,6 +83,7 @@
 <span class='triple-25-aa-cd'>25mm Triple Autocannon Mount (Concentrated Deployment)</span>
 <span class='torpedo-53mm-8'>53cm Submarine Bow Torpedo Mount (8 tubes)</span>
 <span class='torpedo-61mm-6'>Prototype 61cm Sextuple (Oxygen) Torpedo Mount</span>
+<span class='late-model-torpedo-6'>Late Model Bow Torpedo Mount (6 tubes)</span>
 
 <span class='spring-scroll'>Furniture: 'Spring is number 1' scroll</span>
 <span class='anniversary-scroll'>Furniture: 3rd Anniversary scroll</span>

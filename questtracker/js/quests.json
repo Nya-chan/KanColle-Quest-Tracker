@@ -4241,5 +4241,61 @@
     "req": "Defeat the boss in 4-3 with a level 100+ flagship (with S rank)",
     "resrew": "300 / 300 / 300 / 300",
     "otherrew": "<span class='futon'>Furniture: Thin Futon</span>"
+  },
+  "292": {
+    "id": "B91",
+    "classes": "quest sortie",
+    "requirements": [
+      "B69",
+      "Bd5"
+    ],
+    "unlocks": [
+		"B92"
+	],
+    "namejp": "潜水艦隊、中部海域の哨戒を実施せよ！",
+    "nameen": "Submarine Fleet, patrol the Central Waters!",
+    "req": "Sortie a Fleet consisting of 4 SS(V) with an SS(V) as flagship and 2 additional ships. Sortie to World 6-1 and score a victory at the boss node.",
+    "resrew": "300 / 300 / 300 / 0",
+    "otherrew": "3x<span class='screw'>Screw</span> <span class='irako'>Irako</span>"
+  },"164": {
+    "id": "B92",
+    "classes": "quest sortie",
+    "requirements": [
+      "B91"
+    ],
+    "unlocks": "",
+    "namejp": "重装甲巡洋艦、鉄底海峡に突入せよ！",
+    "nameen": "Heavy Armored Cruiser, Embark into the Iron Bottom Sound!",
+    "req": "Sortie Zara due as Flagship with 5 additional ships. Sortie to World 5-3 and score an A-rank or higher victory at the boss node.",
+    "resrew": "0 / 0 / 700 / 0",
+    "otherrew": "<span class='kanhon-bulge'>New Kanhon Design Anti-torpedo Bulge (Medium)</span>"
+  },
+  "279": {
+    "id": "F49",
+    "classes": "quest arsenal",
+    "requirements": [
+      "B91",
+      "B80"
+    ],
+    "unlocks": "",
+    "namejp": "六三一空「晴嵐」隊の編成",
+    "nameen": "Organize the Seiran 631 Air Group!",
+    "req": "Equip a Prototype Seiran in first slot and a Zuiun (631 Air Group) in second slot on either I-401, I-13 or I-14 as secretary.",
+    "resrew": "0 / 0 / 0 / 0",
+    "otherrew": "<span class='seiran-631'>Seiran (631 Air Group)</span>"
+  },
+  "280": {
+    "id": "F50",
+    "classes": "quest arsenal",
+    "requirements": [
+      "F18",
+      "FB91"
+    ],
+    "unlocks": "",
+    "namejp": "潜水艦武装の強化",
+    "nameen": "Enhance Submarine Armaments",
+    "req": "Prepare 3x 61cm Quadruple (Oxygen) Torpedo Mount, 3x Type 93 Passive Sonar and 120 development materials in your inventory. Scrap 4x 61cm Triple Torpedo Mount.",
+    "resrew": "0 / 100 / 0 / 0",
+    "otherrew": "<span class='late-model-torpedo-6'>Late Model Bow Torpedo Mount (6 tubes)</span>"
   }
 }
