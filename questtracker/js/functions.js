@@ -90,6 +90,30 @@ $(document).ready(function() {
 	$("#load-quests").on("click", function(e) {
 		loadQuests($("#questHash").val());
     });
+	
+	$(".repeatable-quests").on("click", function(e) {
+		clearConnections();
+		if ($(this).hasClass("active")) {
+			$(".quest").removeClass("repeatable-hide");
+			$(this).removeClass("active");
+		} else {
+			$(".quest").not(".daily, .weekly, .monthly, .quarterly").addClass("repeatable-hide");
+			$(this).addClass("active");
+		}
+	});
+	
+	$(".screw-quests").on("click", function(e) {
+		clearConnections();
+		if ($(this).hasClass("active")) {
+			$(".quest").removeClass("screw-hide");
+			$(this).removeClass("active");
+			$("body").removeClass("screws-hidden");
+		} else {
+			$(".quest").not(":has(.screw)").addClass("screw-hide");
+			$(this).addClass("active");
+			$("body").addClass("screws-hidden");
+		}
+	});
     
 });
 

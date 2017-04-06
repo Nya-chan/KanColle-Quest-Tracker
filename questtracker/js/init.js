@@ -29,6 +29,10 @@ $(document).ready(function() {
 				$(this).css("background-image", "url('questtracker/img/" + bgPic + ".png')");
 			});
 		});
+	}).done(function() {
+		$(".quest").sort(function(a, b){
+			return ($(b).text()) < ($(a).text()) ? 1 : -1;    
+		}).appendTo('.quests');
 	});
 	
 });

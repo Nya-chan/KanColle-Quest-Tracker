@@ -2,17 +2,19 @@ html, body {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size
 
 h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 2px #8866BB;}
 
-.quests {text-align: center;}
+.quests {text-align: center; margin: 0 100px;}
 
 .quest {width: 250px; height: 148px; border: 2px solid #CCC; background-color: #EEE; border-radius: 10px; text-align: center; position: relative; margin: 10px; z-index: 19; transition: all 0.2s linear; cursor: pointer; display: inline-block; opacity: 0.9;}
 .quest.inactive {opacity: 0.5;}
 .quest.focused {border-color: #C00 !important; transition: all 0.2s linear;}
-.quest.hidden {display: none;}
+.quest.hidden, .repeatable-hide, .screw-hide {display: none;}
 .quest.hidden.temp-show {display: inline-block; opacity: 0.5;}
+.quest.repeatable-hide.temp-show, .screws-hidden .quest.hidden.screw-hide.temp-show {display: none;}
+.quest.daily.repeatable-hide.temp-show, .quest.weekly.repeatable-hide.temp-show, .quest.monthly.repeatable-hide.temp-show, .quest.quarterly.repeatable-hide.temp-show {display: inline-block; opacity: 0.5;}
 
 .quest span {display: block;}
-.quest .id {float: left; width: 25px; height: 32px; line-height: 32px; background-color: #CCC; border-radius: 7px 0 0 0;}
-.quest .name {float: right; width: 225px; height: 16px; max-height: 16px; line-height: 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; background-color: #CCC;}
+.quest .id {float: left; width: 35px; height: 32px; line-height: 32px; background-color: #CCC; border-radius: 7px 0 0 0;}
+.quest .name {float: right; width: 215px; height: 16px; max-height: 16px; line-height: 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; background-color: #CCC;}
 .quest .name.jp {font-size: 0.65rem; font-weight: bold; border-radius: 0 7px 0 0;}
 
 .quest .req {clear: both; display: inline-block; width: 240px; height: 96px; line-height: 96px; overflow: hidden; vertical-align: middle; padding: 0 5px;}
@@ -29,6 +31,11 @@ h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 
 .quest.composition .name, .quest.composition .id, .quest.composition .rewards {background-color: #43C769;}
 
 .quest.sortie {background-color: #F3DCDC; border-color: #EC6063;}
+.quest.sortie.seasonal {border-color: #1C4AA5;}
+.quest.sortie.daily {border-color: #1CA51C;}
+.quest.sortie.weekly {border-color: #A5A31C;}
+.quest.sortie.monthly {border-color: #1CA3A5;}
+.quest.sortie.quarterly {border-color: #921CA5;}
 .quest.sortie .name, .quest.sortie .id, .quest.sortie .rewards {background-color: #EC6063;}
 
 .quest.exercise {background-color: #E5F3DB; border-color: #93CE67;}
@@ -75,6 +82,13 @@ h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 
 
 .info {top: 190px;}
 .info:before {content: "?";}
+
+.repeatable-quests, .screw-quests {position: fixed; top: 10px; left: 0px; padding: 5px 10px 5px 5px; background-color: #AAAAFF; border-radius: 0px 10px 10px 0px; color: #FFF; border: 0px solid #8866BB; border-width: 1px 1px 1px 0px; cursor: pointer; transition: all 0.2s linear; z-index: 29;}
+.repeatable-quests:hover, .screw-quests:hover {padding-left: 20px; transition: all 0.2s linear;}
+.repeatable-quests.active, .screw-quests.active {background-color: #F99; border-color: #C00;}
+.repeatable-quests:before, .screw-quests:before {content: ""; display: inline-block; width: 25px; height: 25px; background: transparent url('../img/ico_repeat.png') no-repeat; background-size: contain;}
+.screw-quests:before {background-image: url('../img/ico_screw.png');}
+.screw-quests {top: 55px;}
 
 .help {position: fixed; top: 25%; left: 25%; width: 50%; text-align: center; z-index: 29; background: #FFF; padding: 20px; box-sizing: border-box; border: 2px solid; border-color: lightsteelblue; box-shadow: 0px 0px 10px 0px lightsteelblue; border-radius: 10px; display: none;}
 .help input[type="text"] {display: block; width: 50%; margin: 0 auto 10px; border: 1px solid lightsteelblue; height: 25px; border-radius: 5px;}
