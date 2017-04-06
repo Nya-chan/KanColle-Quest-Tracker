@@ -282,7 +282,7 @@
       "A13"
     ],
     "unlocks": [
-      "F22"
+      "Fm22"
     ],
     "namejp": "「南雲機動部隊」を編成せよ！",
     "nameen": "Organize the Nagumo Carrier Task Force",
@@ -461,7 +461,7 @@
       "A29"
     ],
     "unlocks": [
-      "D09"
+      "Dw09"
     ],
     "namejp": "「第一水雷戦隊」を編成せよ！",
     "nameen": "Organize the 1st Torpedo Squadron",
@@ -1983,7 +1983,7 @@
     "requirements": [
       "A32",
       "A46",
-      "C02"
+      "Cd02"
     ],
     "unlocks": [
       "B59"
@@ -1999,7 +1999,7 @@
     "classes": "quest sortie",
     "requirements": [
       "B58",
-      "D02"
+      "Dd02"
     ],
     "unlocks": [
       "B66"
@@ -2245,7 +2245,7 @@
     "id": "B77",
     "classes": "quest sortie",
     "requirements": [
-      "C02"
+      "Cd02"
     ],
     "unlocks": "",
     "namejp": "水雷戦隊、南西諸島海域を哨戒せよ！",
@@ -2437,7 +2437,7 @@
     ],
     "unlocks": [
       "Bd02",
-      "Bd04",
+      "Bw04",
       "Bd06"
     ],
     "namejp": "敵艦隊を撃破せよ！",
@@ -2478,7 +2478,7 @@
     "otherrew": "<span class='development-material'>Development Material</span>"
   },
   "168": {
-    "id": "Bd04",
+    "id": "Bw04",
     "classes": "quest sortie daily",
     "requirements": [
       "Bd01"
@@ -2619,7 +2619,7 @@
     "unlocks": [
       "Bw06",
       "Bw07",
-      "F12"
+      "Fw12"
     ],
     "namejp": "海上護衛戦",
     "nameen": "Marine Escort Battle",
@@ -2766,7 +2766,7 @@
     ],
     "unlocks": [
       "B57",
-      "F25"
+      "Fm25"
     ],
     "namejp": "海上護衛強化月間",
     "nameen": "Month-long Strengthening of the Marine Escort",
@@ -2786,7 +2786,7 @@
       "Bq01",
       "A56",
       "A59",
-      "F22"
+      "Fm22"
     ],
     "namejp": "「空母機動部隊」西へ！",
     "nameen": "Carrier Task Force, toward West",
@@ -2920,12 +2920,12 @@
     "otherrew": "<span class='development-material'>Development Material</span>"
   },
   "198": {
-    "id": "C02",
+    "id": "Cd02",
     "classes": "quest exercise daily",
     "requirements": "",
     "unlocks": [
-      "C03",
-      "C04"
+      "Cd03",
+      "Cw04"
     ],
     "namejp": "「演習」で練度向上！",
     "nameen": "Increase the Level of Training by Exercising",
@@ -2934,10 +2934,10 @@
     "otherrew": "<span class='instant-construction'>Instant Construction</span>"
   },
   "199": {
-    "id": "C03",
+    "id": "Cd03",
     "classes": "quest exercise daily",
     "requirements": [
-      "C02"
+      "Cd02"
     ],
     "unlocks": "",
     "namejp": "「演習」で他提督を圧倒せよ！",
@@ -2947,10 +2947,10 @@
     "otherrew": "<span class='development-material'>Development Material</span>"
   },
   "200": {
-    "id": "C04",
+    "id": "Cw04",
     "classes": "quest exercise weekly",
     "requirements": [
-      "C02"
+      "Cd02"
     ],
     "unlocks": "",
     "namejp": "大規模演習",
@@ -3005,7 +3005,7 @@
     "otherrew": "2x<span class='bucket'>Bucket</span> <span class='screw'>Screw</span>"
   },
   "204": {
-    "id": "C08",
+    "id": "Cm08",
     "classes": "quest exercise monthly",
     "requirements": [
       "Bd02"
@@ -3037,7 +3037,7 @@
     "id": "C10",
     "classes": "quest exercise",
     "requirements": [
-      "C02"
+      "Cd02"
     ],
     "unlocks": "",
     "namejp": "秋季大演習",
@@ -3050,7 +3050,7 @@
     "id": "C11",
     "classes": "quest exercise",
     "requirements": [
-      "C02"
+      "Cd02"
     ],
     "unlocks": "",
     "namejp": "冬季大演習",
@@ -3073,11 +3073,11 @@
     "otherrew": ""
   },
   "209": {
-    "id": "D02",
+    "id": "Dd02",
     "classes": "quest expedition daily",
     "requirements": "",
     "unlocks": [
-      "D03"
+      "Dd03"
     ],
     "namejp": "「遠征」を3回成功させよう！",
     "nameen": "Complete 3 Expeditions",
@@ -3086,10 +3086,10 @@
     "otherrew": "<span class='development-material'>Development Material</span>"
   },
   "210": {
-    "id": "D03",
+    "id": "Dd03",
     "classes": "quest expedition daily",
     "requirements": [
-      "D02"
+      "Dd02"
     ],
     "unlocks": "",
     "namejp": "「遠征」を10回成功させよう！",
@@ -3099,7 +3099,7 @@
     "otherrew": "<span class='box-small'>Small Furniture Box</span> <span class='box-medium'>Medium Furniture Box</span>"
   },
   "211": {
-    "id": "D04",
+    "id": "Dw04",
     "classes": "quest expedition weekly",
     "requirements": "",
     "unlocks": "",
@@ -3168,13 +3168,13 @@
     "otherrew": "<span class='z1'>Z1</span> <span class='box-medium'>Medium Furniture Box</span>"
   },
   "216": {
-    "id": "D09",
+    "id": "Dw09",
     "classes": "quest expedition weekly",
     "requirements": [
       "A30"
     ],
     "unlocks": [
-      "D11",
+      "Dw11",
       "D19"
     ],
     "namejp": "南方への輸送作戦を成功させよ！",
@@ -3201,10 +3201,10 @@
     "otherrew": "<span class='zuiun-634'>Zuiun (634 Air Group)</span>"
   },
   "218": {
-    "id": "D11",
+    "id": "Dw11",
     "classes": "quest expedition weekly",
     "requirements": [
-      "D09"
+      "Dw09"
     ],
     "unlocks": "",
     "namejp": "南方への鼠輸送を継続実施せよ!",
@@ -3314,7 +3314,7 @@
     "id": "D19",
     "classes": "quest expedition",
     "requirements": [
-      "D09",
+      "Dw09",
       "B50"
     ],
     "unlocks": [
@@ -3330,7 +3330,7 @@
     "id": "D20",
     "classes": "quest expedition",
     "requirements": [
-      "D02",
+      "Dd02",
       "D06"
     ],
     "unlocks": "",
@@ -3381,11 +3381,11 @@
     "otherrew": "<span class='development-material'>Development Material</span>"
   },
   "231": {
-    "id": "E03",
+    "id": "Ed03",
     "classes": "quest supply daily",
     "requirements": "",
     "unlocks": [
-      "E04"
+      "Ed04"
     ],
     "namejp": "艦隊大整備！",
     "nameen": "The Fleet's Large Maintenance",
@@ -3394,10 +3394,10 @@
     "otherrew": "2x<span class='bucket'>Bucket</span>"
   },
   "232": {
-    "id": "E04",
+    "id": "Ed04",
     "classes": "quest supply daily",
     "requirements": [
-      "E03"
+      "Ed03"
     ],
     "unlocks": "",
     "namejp": "艦隊酒保祭り！",
@@ -3426,7 +3426,7 @@
       "F01"
     ],
     "unlocks": [
-      "F3, F06"
+      "F3, Fd06"
     ],
     "namejp": "はじめての「開発」！",
     "nameen": "The First Development",
@@ -3463,13 +3463,13 @@
     "otherrew": "2x<span class='bucket'>Bucket</span> <span class='development-material'>Development Material</span>"
   },
   "237": {
-    "id": "F05",
+    "id": "Fd05",
     "classes": "quest arsenal daily",
     "requirements": [
       "F02"
     ],
     "unlocks": [
-      "F06"
+      "Fd06"
     ],
     "namejp": "新装備「開発」指令",
     "nameen": "Instructions to Develop New Equipment",
@@ -3478,13 +3478,13 @@
     "otherrew": "<span class='instant-construction'>Instant Construction</span> <span class='development-material'>Development Material</span>"
   },
   "238": {
-    "id": "F06",
+    "id": "Fd06",
     "classes": "quest arsenal daily",
     "requirements": [
-      "F05"
+      "Fd05"
     ],
     "unlocks": [
-      "F07"
+      "Fd07"
     ],
     "namejp": "新造艦「建造」指令",
     "nameen": "Instructions to Construct New Ship",
@@ -3493,13 +3493,13 @@
     "otherrew": "<span class='bucket'>Bucket</span> <span class='development-material'>Development Material</span>"
   },
   "239": {
-    "id": "F07",
+    "id": "Fd07",
     "classes": "quest arsenal daily",
     "requirements": [
-      "F06"
+      "Fd06"
     ],
     "unlocks": [
-      "F08"
+      "Fd08"
     ],
     "namejp": "装備「開発」集中強化！",
     "nameen": "Intensify the Concentration in Developing Equipment",
@@ -3508,15 +3508,15 @@
     "otherrew": "2x<span class='development-material'>Development Material</span>"
   },
   "240": {
-    "id": "F08",
+    "id": "Fd08",
     "classes": "quest arsenal daily",
     "requirements": [
-      "F07"
+      "Fd07"
     ],
     "unlocks": [
-      "F09",
+      "Fd09",
       "F16",
-      "F18"
+      "Fd18"
     ],
     "namejp": "艦娘「建造」艦隊強化！",
     "nameen": "Strengthen the Fleet by Constructing Shipgirls",
@@ -3525,10 +3525,10 @@
     "otherrew": "<span class='instant-construction'>Instant Construction</span> 2x<span class='development-material'>Development Material</span>"
   },
   "241": {
-    "id": "F09",
+    "id": "Fd09",
     "classes": "quest arsenal daily",
     "requirements": [
-      "F08"
+      "Fd08"
     ],
     "unlocks": "",
     "namejp": "軍縮条約対応！",
@@ -3562,7 +3562,7 @@
     "otherrew": "3x<span class='drum'>Drum Canister</span>"
   },
   "244": {
-    "id": "F12",
+    "id": "Fw12",
     "classes": "quest arsenal weekly",
     "requirements": [
       "Bw05"
@@ -3617,7 +3617,7 @@
     "id": "F16",
     "classes": "quest arsenal",
     "requirements": [
-      "F08"
+      "Fd08"
     ],
     "unlocks": "",
     "namejp": "「伊良湖」の準備",
@@ -3633,7 +3633,7 @@
       "A45"
     ],
     "unlocks": [
-      "F18"
+      "Fd18"
     ],
     "namejp": "はじめての「装備改修」！",
     "nameen": "The First Equipment Improvement",
@@ -3642,14 +3642,14 @@
     "otherrew": "7x<span class='screw'>Screw</span>"
   },
   "250": {
-    "id": "F18",
+    "id": "Fd18",
     "classes": "quest arsenal daily",
     "requirements": [
-      "F08",
+      "Fd08",
       "F17"
     ],
     "unlocks": [
-      "F34"
+      "Fw34"
     ],
     "namejp": "装備の改修強化",
     "nameen": "Reinforce Improvement for Equipment",
@@ -3700,7 +3700,7 @@
     "otherrew": "<span class='catapult'>Prototype Flight Deck Catapult</span>"
   },
   "254": {
-    "id": "F22",
+    "id": "Fm22",
     "classes": "quest arsenal monthly",
     "requirements": [
       "A19",
@@ -3735,11 +3735,11 @@
     "id": "F24",
     "classes": "quest arsenal",
     "requirements": [
-      "F22",
+      "Fm22",
       "A59"
     ],
     "unlocks": [
-      "F25",
+      "Fm25",
       "F26"
     ],
     "namejp": "機種転換?機種転換",
@@ -3749,7 +3749,7 @@
     "otherrew": "<span class='type-52-skilled'>Type 0 Fighter Model 52 (Skilled)</span>"
   },
   "257": {
-    "id": "F25",
+    "id": "Fm25",
     "classes": "quest arsenal monthly",
     "requirements": [
       "Bm05",
@@ -3798,7 +3798,7 @@
     "classes": "quest arsenal",
     "requirements": [
       "A61",
-      "F22"
+      "Fm22"
     ],
     "unlocks": [
       "F29"
@@ -3883,10 +3883,10 @@
     "otherrew": "<span class='type-2-landing-craft'>Special Type 2 Amphibious Landing Craft</span>"
   },
   "266": {
-    "id": "F34",
+    "id": "Fw34",
     "classes": "quest arsenal weekly",
     "requirements": [
-      "F18"
+      "Fd18"
     ],
     "unlocks": "",
     "namejp": "対空機銃量産?対空機銃量産",
@@ -3896,7 +3896,7 @@
     "otherrew": "<span class='screw'>Screw</span> 2x<span class='development-material'>Development Material</span>"
   },
   "267": {
-    "id": "F35",
+    "id": "Fq35",
     "classes": "quest arsenal quarterly",
     "requirements": "",
     "unlocks": "",
@@ -3911,7 +3911,7 @@
     "classes": "quest arsenal",
     "requirements": [
       "B71",
-      "F34"
+      "Fw34"
     ],
     "unlocks": "",
     "namejp": "新型魚雷兵装の開発",
@@ -3948,11 +3948,11 @@
     "otherrew": "<span class='type-96-lba'>Type 96 Land-based Attack Aircraft</span>"
   },
   "271": {
-    "id": "F39",
+    "id": "Fq39",
     "classes": "quest arsenal quarterly",
     "requirements": [
       "F38",
-      "D09"
+      "Dw09"
     ],
     "unlocks": "",
     "namejp": "主力「陸攻」の調達",
@@ -3965,7 +3965,7 @@
     "id": "F40",
     "classes": "quest arsenal",
     "requirements": [
-      "F39",
+      "Fq39",
       "C10"
     ],
     "unlocks": "",
@@ -3993,7 +3993,7 @@
     "id": "F42",
     "classes": "quest arsenal",
     "requirements": [
-      "C04"
+      "Cw04"
     ],
     "unlocks": "",
     "namejp": "「特注家具」の調達",
@@ -4021,7 +4021,7 @@
     "classes": "quest arsenal",
     "requirements": [
       "F42",
-      "C02"
+      "Cd02"
     ],
     "unlocks": "",
     "namejp": "「特注家具」の調達",
@@ -4048,7 +4048,7 @@
     "id": "F46",
     "classes": "quest arsenal",
     "requirements": [
-      "C03",
+      "Cd03",
       "F45"
     ],
     "unlocks": "",
@@ -4076,7 +4076,7 @@
     "id": "F48",
     "classes": "quest arsenal",
     "requirements": [
-      "C02",
+      "Cd02",
       "F44"
     ],
     "unlocks": "",
@@ -4098,11 +4098,11 @@
     "otherrew": "<span class='development-material'>Development Material</span>"
   },
   "282": {
-    "id": "G02",
+    "id": "Gd02",
     "classes": "quest modernization daily",
     "requirements": "",
     "unlocks": [
-      "G03"
+      "Gw03"
     ],
     "namejp": "艦の「近代化改修」を実施せよ！",
     "nameen": "Carry Out Ship Modernizations",
@@ -4111,10 +4111,10 @@
     "otherrew": "<span class='bucket'>Bucket</span>"
   },
   "283": {
-    "id": "G03",
+    "id": "Gw03",
     "classes": "quest modernization weekly",
     "requirements": [
-      "G02"
+      "Gd02"
     ],
     "unlocks": "",
     "namejp": "「近代化改修」を進め、戦備を整えよ！",
@@ -4142,7 +4142,7 @@
     "id": "G05",
     "classes": "quest modernization",
     "requirements": [
-      "G03",
+      "Gw03",
       "B87"
     ],
     "unlocks": "",
@@ -4289,7 +4289,7 @@
     "id": "F50",
     "classes": "quest arsenal",
     "requirements": [
-      "F18",
+      "Fd18",
       "FB91"
     ],
     "unlocks": "",
