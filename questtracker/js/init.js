@@ -33,6 +33,15 @@ $(document).ready(function() {
 		$(".quest").sort(function(a, b){
 			return ($(b).text()) < ($(a).text()) ? 1 : -1;    
 		}).appendTo('.quests');
+		$.each($(".quest"), function(index, value) {
+			if ($(this).data("timeout")) {
+				var questTimeout = moment($(this).data("timeout"), "YYYY-MM-DD").tz("Asia/Tokyo").hours(5).minutes(0).seconds(0);
+				var justNow = moment.tz("Asia/Tokyo");
+				if (!questTimeout.isAfter(justNow)) {
+					$(this).addClass("hidden");
+				}
+			}
+		});
 	});
 	
 });
