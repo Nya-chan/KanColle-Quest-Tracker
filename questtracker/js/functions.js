@@ -114,7 +114,17 @@ $(document).ready(function() {
 			$("body").addClass("screws-hidden");
 		}
 	});
-    
+	
+	$(".resize-switch").on("click", function(e) {
+		clearConnections();
+		if ($(this).hasClass("active")) {
+			$(".quests").removeClass("resized-small");
+			$(this).removeClass("active");
+		} else {
+			$(this).addClass("active");
+			$(".quests").addClass("resized-small");
+		}
+	});    
 });
 
 $(document).ajaxStop(function() {
@@ -154,21 +164,21 @@ function findHistory(src, req) {
     $.each(req, function(index, value) {
         if ($("#" + value).length && $("#" + value).is(":visible")) {
             $("#" + value).removeClass("inactive");
-            jsPlumb.connect({
-                source: src,
-                target: $("#" + value),
-                paintStyle: {
-                    stroke: "black",
-                    strokeWidth: 2
-                },
-                endpointStyle: {
-                    fill: "black",
-                    outlineWidth: 0,
-                    radius: 4
-                },
-                connector: ["Flowchart", { stub: [6, 6], gap: 0, cornerRadius: 5, alwaysRespectStubs: true}],
-                anchor: dynamicAnchors
-            })
+			jsPlumb.connect({
+				source: src,
+				target: $("#" + value),
+				paintStyle: {
+					stroke: "black",
+					strokeWidth: 2
+				},
+				endpointStyle: {
+					fill: "black",
+					outlineWidth: 0,
+					radius: 4
+				},
+				connector: ["Flowchart", { stub: [6, 6], gap: 0, cornerRadius: 5, alwaysRespectStubs: true}],
+				anchor: dynamicAnchors
+			})
             if ($("#" + value).data("req")) {
                 var req = $("#" + value).data("req");
                 findHistory($("#" + value), req);

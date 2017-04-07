@@ -78,12 +78,14 @@ h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 
 .info {top: 190px;}
 .info:before {content: "?";}
 
-.repeatable-quests, .screw-quests {position: fixed; top: 10px; left: 0px; padding: 5px 10px 5px 5px; background-color: #AAAAFF; border-radius: 0px 10px 10px 0px; color: #FFF; border: 0px solid #8866BB; border-width: 1px 1px 1px 0px; cursor: pointer; transition: all 0.2s linear; z-index: 29;}
-.repeatable-quests:hover, .screw-quests:hover {padding-left: 20px; transition: all 0.2s linear;}
-.repeatable-quests.active, .screw-quests.active {background-color: #F99; border-color: #C00;}
-.repeatable-quests:before, .screw-quests:before {content: ""; display: inline-block; width: 25px; height: 25px; background: transparent url('../img/ico_repeat.png') no-repeat; background-size: contain;}
+.repeatable-quests, .screw-quests, .resize-switch {position: fixed; top: 10px; left: 0px; padding: 5px 10px 5px 5px; background-color: #AAAAFF; border-radius: 0px 10px 10px 0px; color: #FFF; border: 0px solid #8866BB; border-width: 1px 1px 1px 0px; cursor: pointer; transition: all 0.2s linear; z-index: 29;}
+.repeatable-quests:hover, .screw-quests:hover, .resize-switch:hover {padding-left: 20px; transition: all 0.2s linear;}
+.repeatable-quests.active, .screw-quests.active, .resize-switch.active {background-color: #F99; border-color: #C00;}
+.repeatable-quests:before, .screw-quests:before, .resize-switch:before {content: ""; display: inline-block; width: 25px; height: 25px; background: transparent url('../img/ico_repeat.png') no-repeat; background-size: contain;}
 .screw-quests:before {background-image: url('../img/ico_screw.png');}
+.resize-switch:before {background-image: url('../img/ico_resize.png');}
 .screw-quests {top: 55px;}
+.resize-switch {top: 100px;}
 
 .help {position: fixed; top: 25%; left: 25%; width: 50%; text-align: center; z-index: 29; background: #FFF; padding: 20px; box-sizing: border-box; border: 2px solid; border-color: lightsteelblue; box-shadow: 0px 0px 10px 0px lightsteelblue; border-radius: 10px; display: none;}
 .help input[type="text"] {display: block; width: 50%; margin: 0 auto 10px; border: 1px solid lightsteelblue; height: 25px; border-radius: 5px;}
@@ -91,3 +93,8 @@ h1 {text-align: center; font-size: 2.5rem; color: #AAAAFF; text-shadow: 1px 1px 
 .help #load-quests, .help #copy-code {display: inline-block; margin: 10px; background-color: #AAAAFF; border-radius: 5px; color: #FFF; border: 1px solid #8866BB; padding: 5px 10px; cursor: pointer;}
 .help .close-help {position: absolute; top: -1px; right: 4px; display: block; cursor: pointer;}
 .help .close-help:before {content: "✖"; color: #C00; font-size: 1.5rem;}
+
+.resized-small .quest {height: 32px; overflow: hidden;}
+.resized-small .quest .id {border-radius: 7px 0 0 7px;}
+.resized-small .quest .name.en {border-radius: 0 0 7px 0;}
+.resized-small .quest .rewards {z-index: -1;}
