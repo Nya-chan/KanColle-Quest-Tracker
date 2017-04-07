@@ -117,12 +117,17 @@ $(document).ready(function() {
 	
 	$(".resize-switch").on("click", function(e) {
 		clearConnections();
-		if ($(this).hasClass("active")) {
-			$(".quests").removeClass("resized-small");
-			$(this).removeClass("active");
+		if ($(this).hasClass("small")) {
+			$(this).add(".quests").removeClass("resized small").data("iconState", "");
+		} else if ($(this).hasClass("resized")) {
+			$(this).add(".quests").addClass("small").data("iconState", "resized small");
 		} else {
-			$(this).addClass("active");
-			$(".quests").addClass("resized-small");
+			$(this).add(".quests").addClass("resized").data("iconState", "resized");
+		}
+		if (typeof(Storage) !== "undefined") {
+			localStorage.setItem("iconState", $(this).data("iconState"));
+		} else {
+			Cookies.set("iconState", $(this).data("iconState"));
 		}
 	});    
 });
@@ -130,11 +135,14 @@ $(document).ready(function() {
 $(document).ajaxStop(function() {
     if (typeof(Storage) !== "undefined") {
 		var loadingStorage = localStorage.getItem("questState");
+		var iconState = localStorage.getItem("iconState");
     } else {
 		var loadingStorage = loadQuests(Cookies.get("questState"));
+		var iconState = loadQuests(Cookies.get("iconState"));
     }
 	loadQuests(loadingStorage);
     resetQuests();
+	$(".resize-switch, .quests").addClass(iconState);
 });
 
 function clearConnections() {
@@ -232,7 +240,7 @@ function hashQuests() {
     if (typeof(Storage) !== "undefined") {
         localStorage.setItem("questState", hashArray);
     } else {
-        Cookies.set("questState", hashArray)
+        Cookies.set("questState", hashArray);
     }
 }
 
